@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Border Radius Previewer</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Border Radius Preview</h1>
+      <div class="box"></div>
+      <div class="inputs">
+        <input type="number" min="0" max="100" placeholder="0" /><span>%</span>
+        <input type="number" min="0" max="100" placeholder="0" /><span>%</span>
+        <input type="number" min="0" max="100" placeholder="0" /><span>%</span>
+        <input type="number" min="0" max="100" placeholder="0" /><span>%</span>
+        <span class="slash">/</span>
+        <input type="number" min="0" max="100" placeholder="0" /><span>%</span>
+        <input type="number" min="0" max="100" placeholder="0" /><span>%</span>
+        <input type="number" min="0" max="100" placeholder="0" /><span>%</span>
+        <input type="number" min="0" max="100" placeholder="0" /><span>%</span>
+      </div>
+      <div class="result">
+        <h2>border-radius:</h2>
+        <h2><span class="values">0% 0% 0% 0% / 0% 0% 0% 0%</span></h2>
+        <button type="button" class="btn">Copy</button>
+      </div>
+      <p>
+        Hint: top-left(rx)% top-right(rx)% bottom-right (rx)% bottom-left(rx)% /
+        top-left(ry)% top-right(ry)% bottom-right(ry)% bottom-left(ry)%
+      </p>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
